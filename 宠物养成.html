@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+body {
+    display: table;
+    display: inline-block;
+    }
+    .cell1, .cell2 {
+      display: table-cell;
+      text-align: center;
+      padding: 120px;
+    }
+  
+    .cat {
+      background-image: url(images/cat.jpeg);
+      width: 309px;
+      height: 412px;
+    }
+    .catSay {
+      position: absolute;
+      background-color: azure;
+      border: 2px solid black;
+      width: 350px;
+      height: 30px;
+      top: 120px;
+      left: 360px;
+      text-align: center center;
+    }
+    .doge {
+      background-image: url(images/dog.jpg);
+      width: 400px;
+      height: 265px;
+    }
+    .dogeSay {
+      position: absolute;
+      background-color: azure;
+      border: 2px solid black;
+      width: 350px;
+      height: 30px;
+      top: 266px;
+      left: 1222px;
+      text-align: center center;
+    }
+    h1 {
+        text-align: center;
+    }
+    </style>
+<body>
+    <button><a href="./宠物游戏.html">返回</a></button>
+    <h1>角色选择</h1>
+    <div class="cell1">
+        <div class="cat"></div>
+        <br>
+        <button><a href="./猫咪养成.html">猫咪养成</a></button>
+        <br>
+        <li>name: 'Nut'</li>
+        <li>age: 1</li>
+        <li>breed: 'Mankikang'</li>
+        <li>weight: 7</li>
+        <li>isMale: false</li>
+      </div>
+      <div class="cell2">
+        <div class="doge"></div>
+        <br>
+        <button><a href="./狗狗养成.html">狗狗养成</a></button>
+        <br>
+        <li>name: 'xixi'</li>
+        <li>age: 13</li>
+        <li>breed: '中华田园犬'</li>
+        <li>weight: 25</li>
+        <li>isMale: true</li>
+      </div>
+</body>
+</html>

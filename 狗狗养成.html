@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../02xingkangyi/狗狗养成.js"></script>
+</head>
+<style>
+  body {
+  display: table;
+  display: inline-block;
+  }
+  .cell2 {
+    display: table-cell;
+    text-align: center;
+    padding: 120px;
+  }
+  .doge {
+    background-image: url(images/dog.jpg);
+    width: 400px;
+    height: 265px;
+  }
+  .dogeSay {
+    position: absolute;
+    background-color: azure;
+    border: 2px solid black;
+    width: 350px;
+    height: 30px;
+    top: 130px;
+    left: 430px;
+    text-align: center center;
+  }
+        .health {
+          width: 300px;
+          height: 15px;
+          background-color: green;
+        }
+        .food {
+          width: 300px;
+          height: 15px;
+          background-color: blue;
+        }
+        .water {
+          width: 300px;
+          height: 15px;
+          background-color: orange;
+        }
+</style>
+<body>
+  <button><a href="./宠物养成.html">返回</a></button>
+    <div class="cell2">
+        <div class="doge"></div>
+        <br>
+        <div id="doghealth" class="health"></div>
+        <br>
+        <div id="dogfood" class="food"></div>
+        <br>
+        <div id="dogwater" class="water"></div>
+        <br>
+        <h1 id="dogeStatus" onclick="view.displayDogeStatus()">我即将显示狗的状态</h1>
+        <div id="dogeSay" class="dogeSay"></div>
+        <button onclick="dog.eat()">喂他！</button>
+        <button onclick="dog.run()">没病跑起来！</button>
+        <button onclick="dog.resurrect()">复活吧，我的勇士！</button>
+        <button onclick="dog.shit()">清理粑粑！</button>
+        <button onclick="dog.clear()">洗个澡吧！</button>
+      </div>
+</body>
+</html>

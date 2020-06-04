@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../02xingkangyi/猫咪养成.js"></script>
+</head>
+<style>
+        body {
+          display: table;
+          display: inline-block;
+        }
+        .cell1 {
+          display: table-cell;
+          text-align: center;
+          padding: 120px;
+        }
+      
+        .cat {
+          background-image: url(images/cat.jpeg);
+          width: 309px;
+          height: 412px;
+        }
+        .catSay {
+          position: absolute;
+          background-color: azure;
+          border: 2px solid black;
+          width: 350px;
+          height: 30px;
+          top: 120px;
+          left: 360px;
+          text-align: center center;
+        }
+        .health {
+          width: 300px;
+          height: 15px;
+          background-color: green;
+        }
+        .food {
+          width: 300px;
+          height: 15px;
+          background-color: blue;
+        }
+        .water {
+          width: 300px;
+          height: 15px;
+          background-color: orange;
+        }
+</style>
+<body>
+  <button><a href="./宠物养成.html">返回</a></button>
+    <div class="cell1">
+        <div class="cat"></div>
+        <br>
+        <div id="cathealth" class="health" onclick="cat.health()"></div>
+        <br>
+        <div id="catfood" class="food"></div>
+        <br>
+        <div id="catwater" class="water"></div>
+        <br>
+        <h1 id="catStatus" onclick="view.displaycatStatus()">I will display cat's real time status.</h1>
+        <div id="catSay" class="catSay"></div>
+        <button onclick="cat.eat()">Feed her!</button>
+        <button onclick="cat.run()">Meiri your cat!</button>
+        <button onclick="cat.resurrect()">Resurrection nut!</button>
+        <button onclick="cat.shit()">Clear shit!</button>
+        <button onclick="cat.clear()">Take a bath!</button>
+      </div>
+</body>
+</html>

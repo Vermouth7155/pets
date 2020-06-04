@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="../02xingkangyi/宠物对战.js"></script>
+</head>
+<style>
+  body {
+  display: table;
+  display: inline-block;
+  }
+  .cell1, .cell2 {
+    display: table-cell;
+    text-align: center;
+    padding: 120px;
+  }
+
+  .cat {
+    background-image: url(images/cat.jpeg);
+    width: 309px;
+    height: 412px;
+  }
+  .doge {
+    background-image: url(images/dog.jpg);
+    width: 400px;
+    height: 265px;
+  }
+  .btn1 {
+    width: 90px;
+    height: 90px;
+    border-radius: 90px;
+    color: red;
+  }
+  .btn2 {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    color: green;
+  }
+  h1 {
+        text-align: center;
+  }
+  .health {
+          width: 300px;
+          height: 15px;
+          background-color: green;
+        }
+</style>
+<body>
+  <button><a href="./宠物游戏.html">返回</a></button>
+  <h1>宠物对战</h1>
+  <div class="cell1">
+    <div class="cat"></div>
+    <br>
+    <div id="cathealth" class="health"></div>
+    <br>
+    <h1 id="catStatus" onclick="view.displaycatStatus()">I will display cat's real time status.</h1>
+    <button class="btn1" onclick="cat.hit()">Hit him</button>
+    <button class="btn1" onclick="cat.head()">Long Head</button>
+    <button class="btn2" onclick="cat.boold()">Treat</button>
+    <button class="btn2" onclick="cat.resurrect()">Resur</button>
+  </div>
+  <div class="cell2">
+    <div class="doge"></div>
+    <br>
+    <div id="doghealth" class="health"></div>
+    <br>
+    <h1 id="dogeStatus" onclick="view.displayDogeStatus()">我即将显示狗的状态</h1>
+    <button class="btn2" onclick="dog.resurrect()">复活</button>
+    <button class="btn2" onclick="dog.boold()">治疗</button>
+    <button class="btn1" onclick="dog.head()">龙抬头</button>
+    <button class="btn1" onclick="dog.hit()">打他</button>
+  </div>
+</body>
+</html>
